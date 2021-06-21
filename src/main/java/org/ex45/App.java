@@ -14,6 +14,12 @@ public class App
         writeNewOuput.writeToFile(searchForKeyword(input.inputToArray(),"utilize","use"));
     }
 
+    /* searchForKeyword given a keyword and an array to look through, sort through until an index is found and replace it
+    for(~)
+        while(indexOf(searchWord))
+            new String s = before index + new word + after index
+     */
+
     public static ArrayList<String> searchForKeyword(ArrayList<String> s, String needle, String replace)
     {
         for(int i = 0; i < s.size(); i++)

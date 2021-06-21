@@ -14,6 +14,12 @@ public class App
         printEach.printOutput(findWords(input.inputTo()));
     }
 
+    /*findwords used to make a list of the words that countword will later use to find the index of each
+    ArrayList<String>
+    foreach(unique word in input string)
+        add(i,string at index)
+    * */
+
     public static Map<Integer,String> findWords(String string)
     {
 
@@ -21,13 +27,18 @@ public class App
         //int[] i;
 
         String split[] = string.split(" ");
-        HashSet<String> list = new HashSet<String>(Arrays.asList(split));
+        HashSet<String> list = new HashSet<>(Arrays.asList(split));
         for(String s:list)
         {
             returnMap.put((countWord(split,s)),s+":");
         }
         return returnMap;
     }
+
+    /*countwords count each occurance of a given word
+    if(string.equals(given[])
+        increment++;
+    */
 
     public static int countWord(String[] s, String match)
     {

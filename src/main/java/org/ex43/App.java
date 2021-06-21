@@ -15,6 +15,10 @@ public class App
     {
         folderCreation(userInput.input());
     }
+    /* folderCreation
+        create base folder
+        start next
+     */
     public static void folderCreation(info i)
     {
         File dir = new File("./src/website/" + i.webName);
@@ -25,6 +29,10 @@ public class App
         System.out.println("Created ./src/website/" + i.webName);
         indexCreation(i);
     }
+    /* indexCreation
+        create html in basefolder
+        start next
+     */
 
     public static void indexCreation(info i)
     {
@@ -46,6 +54,10 @@ public class App
         System.out.println("Created ./src/website/" + i.webName + "/index.html");
         jsCreation(i);
     }
+    /* folderCreation
+        create js folder under base folder
+        start next
+     */
 
     public static void jsCreation(info i)
     {
@@ -59,6 +71,10 @@ public class App
         }
         cssCreation(i);
     }
+    /* folderCreation
+        create cs folder under base folder
+        start printing function
+     */
 
     public static void cssCreation(info i)
     {

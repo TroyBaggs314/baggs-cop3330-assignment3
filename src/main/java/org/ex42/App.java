@@ -14,6 +14,14 @@ public class App
         printSequence.printOutput(parseInput(new readInput().readFile()));
     }
 
+    /* parseInput we know the pattern of last,first,salary so just use string seperation
+    while(string[].size() > i)
+        get char until , appears
+        get char until , appears again
+        get rest of chars as int
+
+     */
+
     public static ArrayList<nameSal> parseInput(ArrayList<String> s)
     {
         ArrayList<nameSal> finNs = new ArrayList<>();

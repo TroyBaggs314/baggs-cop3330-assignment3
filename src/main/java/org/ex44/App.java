@@ -29,6 +29,15 @@ public class App
             loop(archiveMatch.match(parseJsonToObject(),askUser.readInput(true)));
         }
     }
+    /* parseJsonToObject
+       use gson's default reader to parse into class Product
+       make Reader file
+       if(file)
+        gson.parseString = Class.name
+        gson.parseDouble = Class.price
+        gson.parseInt = Class.quantity
+
+     */
 
     public static Product[] parseJsonToObject()
     {
