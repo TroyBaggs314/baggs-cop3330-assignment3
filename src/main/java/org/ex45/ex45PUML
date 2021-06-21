@@ -1,0 +1,7 @@
+@startuml
+inputFile -> toStringArray()
+toStringArray -> searchForKeyword
+searchForKeyword -> replaceKeywords
+replaceKeywords -> searchForKeyword
+searchForKeyword -> writeNewOutput
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+exercise42_input.txt -> readFile
+readFile -> parseInput
+parseInput -> printSequence()
+@enduml

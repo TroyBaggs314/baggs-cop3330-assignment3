@@ -1,0 +1,7 @@
+@startuml
+exercise41_input.txt -> readFile
+readFile -> countNames
+readFile -> sortNames
+countNames -> sortNames
+sortNames -> printSequence()
+@enduml

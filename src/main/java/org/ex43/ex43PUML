@@ -1,0 +1,8 @@
+@startuml
+userInput -> folderDecisions
+folderDecisions-> folderCreation
+folderCreation -> indexCreation
+indexCreation -> jsCreation
+jsCreation -> cssCreation
+cssCreation -> printSequence()
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+readInput->parseJsonObject
+parseJsonObject->match
+match->printSequence
+match->loop()
+@enduml

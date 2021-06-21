@@ -1,0 +1,7 @@
+@startuml
+inputFile -> toString
+toString -> findWords
+findWords->countWord
+findWords->printEach
+
+@enduml
